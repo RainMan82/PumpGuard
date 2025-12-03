@@ -1,0 +1,24 @@
+{
+  "name": "pumpguard",
+  "version": "1.0.0",
+  "description": "Pump.fun launch sniffer",
+  "main": "src/index.ts",
+  "scripts": {
+    "watch": "ts-node src/index.ts watch",
+    "report": "ts-node src/index.ts report",
+    "export": "ts-node src/index.ts export",
+    "export-tsv": "ts-node src/index.ts export-tsv",
+    "sniffer": "ts-node src/index.ts sniffer",
+    "scanner": "ts-node src/index.ts scanner",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@solana/web3.js": "^1.95.2"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
+  }
+}
