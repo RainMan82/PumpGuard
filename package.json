@@ -1,24 +1,62 @@
 {
   "name": "pumpguard",
-  "version": "1.0.0",
-  "description": "Pump.fun launch sniffer",
-  "main": "src/index.ts",
+  "version": "2.0.0",
+  "description": "PumpGuard — Real-time Pump.fun Guardian, AI-Enhanced Risk Analyzer & Transaction Monitor.",
+  "author": "RainMan82",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/RainMan82/PumpGuard",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RainMan82/PumpGuard.git"
+  },
+
   "scripts": {
     "watch": "ts-node src/index.ts watch",
-    "report": "ts-node src/index.ts report",
-    "export": "ts-node src/index.ts export",
-    "export-tsv": "ts-node src/index.ts export-tsv",
-    "sniffer": "ts-node src/index.ts sniffer",
-    "scanner": "ts-node src/index.ts scanner",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "ts-node src/index.ts dev",
+    "start": "node dist/index.js",
+    "build": "tsc -p tsconfig.json",
+    "report": "ts-node src/report.ts"
   },
-  "author": "",
-  "license": "MIT",
+
+  "keywords": [
+    "pumpfun",
+    "pump.fun",
+    "solana",
+    "monitor",
+    "risk",
+    "analysis",
+    "security",
+    "blockchain",
+    "meme coin",
+    "pumpguard",
+    "helius",
+    "real time feed",
+    "investor tooling",
+    "guardian ai",
+    "tx watcher"
+  ],
+
+  "engines": {
+    "node": ">=18.0.0"
+  },
+
   "dependencies": {
-    "@solana/web3.js": "^1.95.2"
+    "@solana/web3.js": "^1.95.0",
+    "axios": "^1.7.2",
+    "chalk": "^4.1.2",
+    "cli-table3": "^0.6.3",
+    "csv-writer": "^1.6.0",
+    "dotenv": "^16.4.1",
+    "figlet": "^1.7.0",
+    "gradient-string": "^2.0.2",
+    "log-symbols": "^4.1.0",
+    "uuid": "^9.0.1"
   },
+
   "devDependencies": {
-    "ts-node": "^10.9.1",
-    "typescript": "^5.3.2"
+    "@types/node": "^20.12.7",
+    "@types/cli-table3": "^0.6.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
   }
 }
